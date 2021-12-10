@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guess Me!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+
+        <!-- Top Bar -->
+        <header class="titleBar">
+            <h1 class="title">Guess Me!</h1>
+            <p class="sub-title">Guess a number between 1 & 1000</p>        
+            <input type="button" class="btn" id="themeBtn" onclick="SwapTheme();" value="Dark theme">
+        </header>
+
+        <form>
+            <!-- First floating panel -->
+            <div class="panel" id="inputPanel">
+                <!-- Number input -->
+                <input type="number" id="numIn" placeholder="Enter your guess here">
+                <!-- Button input -->
+                <input type="button" class="btn" onclick="Submit();" value="Submit">
+                <hr>
+                <!-- Output -->
+                <span id="out" class="text">Results will appear here!</span>
+            </div>
+            <!-- Second floating panel -->
+            <div class="panel" id="outPanel">
+                <!-- High score -->
+                <span id="hs" class="text">Current High Score: . . .</span>
+                <!-- Game restart -->
+                <input type="reset" class="btn" id="reset" onclick="Reset();" value="Restart">
+            </div>
+        </form>
+    </body>
+</html>
