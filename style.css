@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Ubuntu&display=swap');
+
+body {
+    background: url("monterey.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+
+:root {
+    --element-shadow: 0px 0px 15px 7px;
+
+    /* Theming */
+    --background: white;
+    --text-colour: black;
+    --hover: rgb(223, 223, 223);
+    --panel-background: rgba(255, 255, 255, 0.3);
+    --hover-shadow: rgba(233, 223, 223, 0.3);
+}
+
+.titleBar {
+    padding: 15px;
+    backdrop-filter: blur(4px);
+    background-color: var(--panel-background);
+}
+
+.title {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 52px;
+}
+
+.sub-title {
+    font-size: 22px;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.panel {
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    background: var(--panel-background);
+}
+
+#inputPanel {
+    padding: 40px;
+    margin-top: 6%;
+    margin-right: 12%;
+    margin-left: 12%;
+}
+
+#numIn {
+    width: 1000px;
+    max-width: 20%;
+    padding: 24px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: rgba(0, 0, 0, 0.0);
+    background: var(--background);
+    box-shadow: var(--element-shadow) var(--panel-background);
+    color: var(--text-colour);
+}
+
+#numIn::-webkit-inner-spin-button {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    float: right;
+    padding: 24px;
+    width: 20%;
+    max-width: 250px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    min-width: 150px;
+    border: rgba(0, 0, 0, 0.0);
+    color: var(--text-colour);
+    background-color: var(--background);
+    box-shadow: var(--element-shadow) var(--panel-background);
+}
+
+.btn:hover {
+    background: var(--hover);
+    box-shadow: var(--element-shadow) var(--hover-shadow);
+}
+
+hr {
+    padding: 13px;
+    border: 0px;
+}
+
+#outPanel {
+    padding: 40px;
+    margin-top: 32px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: auto;
+}
+
+.text {
+    padding-left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+#reset {
+    float: none;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hs {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+    font-size: 24pt;
+}
+
+#themeBtn {
+    float: none;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    display: block;
+}

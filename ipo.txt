@@ -1,0 +1,28 @@
+----------------INPUT----------------
+
+The user will guess a random number out of 100.
+The way the website will recieve this number is through a number input and a submit button.
+The user may restart the game using a dedicated reset button.
+
+
+----------------PROCESSING----------------
+
+On start of the game, create a random number from 1 - 1000.
+Also create a guess counter and a high score.
+
+Check user input when submit button is pressed.
+    Add 1 to the guess count.
+    Compare the input to the user input.
+        If the user input is right, compare the current amount of guesses to the high score.
+            If the user got a new high score, save the guess amount to the high score.
+            Reset the number of guesses.
+            Reset the random number to a new number between 1 - 1000.
+
+
+----------------OUTPUT----------------
+
+When the user input is compared to the random number, tell them if they are right or not.
+If they are wrong, tell them if they need to guess higher or lower.
+Otherwise (if they're right) tell them they're right.
+    Tell them the amount of guesses it took to get to that correct guess.
+    Tell them if they beat the high score or not.
